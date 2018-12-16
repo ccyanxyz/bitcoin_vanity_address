@@ -1,11 +1,14 @@
 ## Bitcoin vainty address miner
 
-### requirements:
+### Requirements:
 	libbitcoin
 	g++/clang++
 
 ### Usage:
 ```
-	make
-	./vanity_miner 1cyan
+make
+./vanity_miner 1cyan
 ```
+
+![1](./1.png)
+
