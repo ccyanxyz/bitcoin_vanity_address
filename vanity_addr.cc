@@ -39,10 +39,10 @@ int main(int argc, char *argv[]) {
 }
 
 bc::ec_secret random_secret(std::default_random_engine& engine) {
-		bc::ec_secret secret;
-		for(uint8_t &byte: secret)
-			byte = engine() % std::numeric_limits<uint8_t>::max(); 
-		return secret;
+	bc::ec_secret secret;
+	for(uint8_t &byte: secret)
+		byte = engine() % std::numeric_limits<uint8_t>::max(); 
+	return secret;
 }
 
 std::string bitcoin_address(const bc::ec_secret& secret) {
